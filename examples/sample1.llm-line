@@ -1,0 +1,49 @@
+```
+# llm-line sample file
+# @SPEC-VERSION 0.1.0-draft
+
+@RECORD user
+id: 123
+username: madilloar
+email: madilloar@example.com
+signup_date: 2026-07-12
+active: true
+
+@LIST roles
+- admin
+- contributor
+- reviewer
+
+@RECORD profile
+display_name: madilloar.
+location: Tokyo, Japan
+bio: LLM output ingestion engineer; likes robust formats.
+
+@TEXT long_bio
+Camel is an engineer experimenting with line-oriented formats to stabilize
+LLM outputs. This text block demonstrates multi-line free text usage.
+It ends at the first blank line or next @ marker.
+
+@RECORD metrics
+requests_today: 452
+errors_today: 3
+avg_latency_ms: 12.7
+
+# Example of unknown/extension tag that parsers should passthrough
+@EXTENSION telemetry
+source: llm-agent-v2
+sample_rate: 0.01
+
+# Escaping examples: leading @ and - in values
+@RECORD note
+title: \@not-a-marker
+content: \- This line starts with a dash but is part of the value
+
+# Minimal list with numeric-like items
+@LIST scores
+- 98
+- 87
+- 76
+
+# End of sample
+```
