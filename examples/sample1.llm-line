@@ -1,4 +1,3 @@
-```text
 # llm-line sample file
 # @SPEC-VERSION 0.1.0-draft
 
@@ -46,4 +45,3 @@ content: \- This line starts with a dash but is part of the value
 - 76
 
 # End of sample
-```
