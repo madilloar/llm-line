@@ -1,0 +1,47 @@
+# llm-line サンプルファイル
+# @SPEC-VERSION 0.1.0-draft
+
+@RECORD user
+id: 123
+username: madilloar
+email: madilloar@example.com
+signup_date: 2026-07-12
+active: true
+
+@LIST roles
+- admin
+- contributor
+- reviewer
+
+@RECORD profile
+display_name: madilloar.
+location: 日本・東京
+bio: LLM 出力取り込みエンジニア；堅牢なフォーマットを好む。
+
+@TEXT long_bio
+madilloar は、LLM 出力を安定化するための行指向フォーマットを試作しているエンジニアです。
+このテキストブロックは複数行の自由テキストの使用例を示します。
+内容は最初の空行または次の @ マーカーで終了します。
+
+@RECORD metrics
+requests_today: 452
+errors_today: 3
+avg_latency_ms: 12.7
+
+# パーサが透過すべき未知／拡張タグの例
+@EXTENSION telemetry
+source: llm-agent-v2
+sample_rate: 0.01
+
+# エスケープ例：値の先頭に @ や - を含める場合
+@RECORD note
+title: \@not-a-marker
+content: \- この行はダッシュで始まりますが値の一部です
+
+# 数値風の項目を持つ最小リスト
+@LIST scores
+- 98
+- 87
+- 76
+
+# サンプル終了
