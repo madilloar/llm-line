@@ -41,7 +41,7 @@ John Doe is a sample user.
 
 ## Contributing and Security (short)
 - **Contributing**: This repo is in draft. Please open an Issue to start design discussions. For code changes, fork and submit a Pull Request referencing the related Issue. Small doc fixes may be submitted directly as PRs.  
-- **Security**: If you believe you found a security issue, please report it privately rather than opening a public Issue. Preferred contact: replace with an actual email or maintainer GitHub handle in `SECURITY.md`.
+- **Security**: If you believe you found a security issue, please report it privately rather than opening a public Issue.
 
 ---
 
